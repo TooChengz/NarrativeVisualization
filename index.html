@@ -1,1 +1,38 @@
-<h1>Setup</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olympics Timeline from 1896-2022</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Olympic Timeline</h2>
+        <p>With The 2024 Paris Olympics coming up soon, it's a good time to look back on the history of the Olympic Games</p>
+        <button id="back">Back</button>
+        <button id="forward">Forward</button>
+        <div id="medal-filter">
+            <label><input type="checkbox" value="Gold" checked> Gold</label>
+            <label><input type="checkbox" value="Silver" checked> Silver</label>
+            <label><input type="checkbox" value="Bronze" checked> Bronze</label>
+        </div>
+        <div id="timeline"></div>
+        <div id="charts-container">
+            <div id="chart"></div>
+            <div id="bar-chart"></div>
+        </div>
+        <!--
+        <button id="back" onclick="previousScene()">Back</button>
+        <button id="forward" onclick="nextScene()">Forward</button>
+        -->
+        <div id="debug-info"></div>
+        <!-- Load d3.js -->
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
+        <!-- Add future Scripts here for d3 pages -->
+        <script src="Process.js"></script>
+        <p>
+            Dataset link: https://www.kaggle.com/datasets/amirba/olympic-sports-and-medals-18962021?select=dictionary.csv
+        </p>
+    </body>
+</html>

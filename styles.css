@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#timeline span {
+    font-size: 10px; /* Smaller font size */
+    padding: 1px 2px; /* Smaller padding */
+    cursor: pointer;
+    margin: 0 3px; /* Smaller margin between years */
+}
+
+#timeline span.active {
+    background-color: lightskyblue;
+}
+#charts-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space around the items */
+    align-items: flex-start; /* Align items at the start */
+}
+
+#chart, #bar-chart {
+    width: 50%; /* Adjust the width as needed */
+    margin: 10px;
+}
+svg {
+    width: 100%; /* Ensure the SVGs take up the full width of their containers */
+    height: auto; /* Maintain aspect ratio */
+}
+
+button {
+    margin: 10px;
+}
+body {
+    background: linear-gradient(to bottom, #ffffff, #cfcfcf);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* #chart {
+    margin: 20px auto;
+    width: 90%;
+    height: 500px;
+}
+#bar-chart {
+    margin: 20px auto;
+    width: 90%;
+    height: 500px;
+} */
