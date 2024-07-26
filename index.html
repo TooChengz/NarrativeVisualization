@@ -7,8 +7,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h2>Olympic Timeline</h2>
-        <p>With The 2024 Paris Olympics coming up soon, it's a good time to look back on the history of the Olympic Games</p>
+        <div id="timeline-title-container">
+            <h2 id="timeline-title">Olympic Timeline</h2>
+            <p>With The 2024 Paris Olympics coming up soon, it's a good time to look back on the history of the Olympic Games spanning from 1896 to now</p>
+        </div>
+        <div id="city-info"></div>
+
         <button id="back">Back</button>
         <button id="forward">Forward</button>
         <div id="medal-filter">
@@ -25,14 +29,18 @@
         <button id="back" onclick="previousScene()">Back</button>
         <button id="forward" onclick="nextScene()">Forward</button>
         -->
-        <div id="debug-info"></div>
+        <div id="bottom-text-container">
+            <p id="bottom-text">Dataset links: 
+                <a href="https://www.kaggle.com/datasets/amirba/olympic-sports-and-medals-18962021/data?select=summer.csv" target="_blank">Summer Olympics Dataset</a>,
+                <a href="https://www.kaggle.com/datasets/amirba/olympic-sports-and-medals-18962021?select=dictionary.csv" target="_blank">Dictionary Dataset</a>,
+                <a href="https://www.kaggle.com/datasets/amirba/olympic-sports-and-medals-18962021/data?select=winter.csv" target="_blank">Winter Olympics Dataset</a>
+            </p>
+        </div>
+        <!-- <div id="debug-info"></div> -->
         <!-- Load d3.js -->
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.1/d3-annotation.min.js"></script>
         <!-- Add future Scripts here for d3 pages -->
         <script src="Process.js"></script>
-        <p>
-            Dataset link: https://www.kaggle.com/datasets/amirba/olympic-sports-and-medals-18962021?select=dictionary.csv
-        </p>
     </body>
 </html>

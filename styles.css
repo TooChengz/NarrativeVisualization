@@ -7,8 +7,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
-
 #timeline span {
     font-size: 10px; /* Smaller font size */
     padding: 1px 2px; /* Smaller padding */
@@ -42,13 +40,30 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-/* #chart {
-    margin: 20px auto;
-    width: 90%;
-    height: 500px;
+
+#timeline-title-container {
+    text-align: center;
+    width: 100%;
 }
-#bar-chart {
-    margin: 20px auto;
-    width: 90%;
-    height: 500px;
-} */
+
+#timeline-title {
+    margin: 0; /* Ensure there's no default margin */
+    padding: 5px 0; /* Optional: Add padding to space it out */
+}
+
+#bottom-text {
+    font-size: 12px; /* Adjust this value to make the font smaller or larger */
+    position: relative; /* Set position to relative to use top property */
+    top: -100px; /* Move the text up by 30 pixels */
+}
+#city-info {
+    font-size: 20px;
+    color: blue; /* Change the text color to blue */
+    text-align: center; /* Center the text horizontally */
+    margin: -10px auto; /* Add some space around the text and center it */
+    font-weight: bold; /* Make the text bold */
+    font-family: Arial, sans-serif; /* Use a sans-serif font */
+    position: relative; /* Set position to relative to use top property */
+    top: 0px; /* Move the text up by 30 pixels */
+
+}
